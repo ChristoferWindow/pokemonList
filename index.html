@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="main.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div  style="background-image: url('jumbotron-background.jpg');background-repeat: no-repeat; height: 300px; background-size: cover;">
+        <div id="heading" style="width: 50%;position:relative; top:15%;">
+            <h1>Pokemon generator</h1>
+            <p>Pleas fill out form below in order to create your desired Pokemon, </br> or click
+                generate button to randomly generate pokemon from our system</p>
+        </div>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="name">Pokemon name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="eg. Charmander">
+        </div>
+        <div class="form-group">
+            <label for="type">Type</label>
+            <input type="password" class="form-control" id="type" placeholder="eg. Water">
+        </div>
+        <button type="submit" class="btn btn-primary">Stwórz pokemona</button>
+    </form>
+    </br>
+    <button type="button" class="btn btn-outline-dark">Wygeneruj pokemona</button>
+</div>
+</body>
+</html>
