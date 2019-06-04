@@ -16,19 +16,32 @@
                 generate button to randomly generate pokemon from our system</p>
         </div>
     </div>
-    <form>
+    <form id="pokemonForm">
         <div class="form-group">
             <label for="name">Pokemon name</label>
-            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="eg. Charmander">
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="eg. Kimchi">
         </div>
         <div class="form-group">
             <label for="type">Type</label>
-            <input type="password" class="form-control" id="type" placeholder="eg. Water">
+            <select name="type" id="type">
+                <option value ="togepi">Togepi</option>
+                <option value ="bulbasaur">Bulbasaur</option>
+                <option value ="metapod">Metapod</option>
+                <option value ="kakuna">Kakuna</option>
+            </select>
         </div>
-        <button type="submit" class="btn btn-primary">Stwórz pokemona</button>
+        <div class="form-group">
+            <label for="strength">Strength</label>
+            <input type="number" class="form-control" id="strength" aria-describedby="strength" placeholder="eg. 120">
+        </div>
+        <div class="form-group">
+            <label for="agility">Pokemon name</label>
+            <input type="number" class="form-control" id="agility" aria-describedby="agility" placeholder="eg. 120">
+        </div>
+        <button type="submit" class="btn btn-primary">Create new Pokemon</button>
     </form>
     </br>
-    <button type="button" class="btn btn-outline-dark">Wygeneruj pokemona</button>
+    <button type="button" class="btn btn-outline-dark">Randomly generate</button>
 </div>
 </body>
 </html>
